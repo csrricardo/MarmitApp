@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_layout"
+        android:paddingRight="@dimen/padding_layout">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:onClick="abrirCadastro"
+                android:text="@string/cadastre_se_aqui"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:textStyle="normal|bold" />
+
+            <ImageView
+                android:id="@+id/imgViewLogo"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/logo"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:onClick="abrirPedido"
+                android:text="@string/faça_seu_pedido_aqui"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

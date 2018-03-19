@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/login"
+        android:title="@string/login"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/cardapio_semana"
+        android:title="@string/cardapio_da_semana"
+        android:orderInCategory="101"/>
+    <item
+        android:id="@+id/meus_pedidos"
+        android:title="@string/meus_pedido"
+        android:orderInCategory="102"/>
+    <item
+        android:id="@+id/sair"
+        android:title="@string/sair"
+        android:orderInCategory="103"/>
+
+</menu>

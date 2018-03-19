@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_layout"
+        android:paddingLeft="@dimen/padding_layout"
+        android:paddingRight="@dimen/padding_layout"
+        android:orientation="vertical"
+        tools:context=".PedidoActivity">
+
+        <TextView
+            android:id="@+id/txtCardapio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/marmitex"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="#E65100"
+            android:textStyle="normal|bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/ckbMP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mamitex_pequena" />
+            <CheckBox
+                android:id="@+id/ckbMM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mamitex_media" />
+            <CheckBox
+                android:id="@+id/ckbMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mamitex_grande" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spMP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Spinner
+                android:id="@+id/spMM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Spinner
+                android:id="@+id/spMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtRefrigerantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/refrigerantes"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="#01579B"
+            android:textStyle="normal|bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/ckbGuarana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/guarana" />
+            <CheckBox
+                android:id="@+id/ckbCoca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/coca_cola" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spGA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Spinner
+                android:id="@+id/spCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSucos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sucos"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="#004c10"
+            android:textStyle="normal|bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/ckbSucoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/suco_de_abacaxi" />
+            <CheckBox
+                android:id="@+id/ckbSucoL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/suco_de_laranja" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spSA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <Spinner
+                android:id="@+id/spSL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valor_total"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/btnConfirmaPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="openAddresPayment"
+            android:text="@string/confirmar"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+</ScrollView>
